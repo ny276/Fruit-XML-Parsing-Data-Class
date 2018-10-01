@@ -12,9 +12,8 @@ class ViewController: UIViewController, XMLParserDelegate {
     // 데이터 클래스 객체 배열
     var myFruitData = [FruitData]()
     
-    var dName = ""
-    var dColor = ""
-    var dCost = ""
+    var dTitle = ""
+    var dAuthor = ""
 
     // 현재의 tag를 저장
     var currentElement = ""
@@ -24,7 +23,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         // Fruit.xml 화일을 가져 오기
         // optional binding nil check
-        if let path = Bundle.main.url(forResource: "Fruit", withExtension: "xml") {
+        if let path = Bundle.main.url(forResource: "book", withExtension: "xml") {
             // 파싱 시작
             if let myParser = XMLParser(contentsOf: path) {
                 // delegate를 ViewController와 연결
@@ -37,7 +36,8 @@ class ViewController: UIViewController, XMLParserDelegate {
 //                    print(myFruitData[0].cost)
                     
                     for i in 0 ..< myFruitData.count {
-                        print(myFruitData[i].name)
+                        print(myFruitData[i].title)
+                        print(myFruitData[i].author)
                     }
                 } else {
                     print("파싱 실패")
@@ -65,9 +65,8 @@ class ViewController: UIViewController, XMLParserDelegate {
         
         if !data.isEmpty {
             switch currentElement {
-            case "name" : dName = data
-            case "color" : dColor = data
-            case "cost" : dCost = data
+            case "title" : dTitle = data
+            case "author" : dAuthor = data
             default : break
             }
         }
@@ -75,11 +74,10 @@ class ViewController: UIViewController, XMLParserDelegate {
     
     //3. tag가 끝날때 실행(/tag)
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "item" {
+        if elementName == "book" {
             let myItem = FruitData()
-            myItem.name = dName
-            myItem.color = dColor
-            myItem.cost = dCost
+            myItem.title = dTitle
+            myItem.author = dAuthor
             myFruitData.append(myItem)
         }
     }

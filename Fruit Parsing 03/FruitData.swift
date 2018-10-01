@@ -8,7 +8,7 @@
 
 import Foundation
 class FruitData {
-    var name = ""
-    var color = ""
-    var cost = ""
+    var title = ""
+    var author = ""
+ 
 }

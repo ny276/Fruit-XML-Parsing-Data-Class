@@ -12,7 +12,7 @@
 		05ACD38F214F3C8B00DB271A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05ACD38D214F3C8B00DB271A /* Main.storyboard */; };
 		05ACD391214F3C8C00DB271A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05ACD390214F3C8C00DB271A /* Assets.xcassets */; };
 		05ACD394214F3C8C00DB271A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05ACD392214F3C8C00DB271A /* LaunchScreen.storyboard */; };
-		05ACD3A0214F3F9100DB271A /* Fruit.xml in Resources */ = {isa = PBXBuildFile; fileRef = 05ACD39F214F3F9100DB271A /* Fruit.xml */; };
+		05ACD3A0214F3F9100DB271A /* book.xml in Resources */ = {isa = PBXBuildFile; fileRef = 05ACD39F214F3F9100DB271A /* book.xml */; };
 		05ACD3A2214F447900DB271A /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACD3A1214F447900DB271A /* FruitData.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		05ACD390214F3C8C00DB271A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05ACD393214F3C8C00DB271A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05ACD395214F3C8C00DB271A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05ACD39F214F3F9100DB271A /* Fruit.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fruit.xml; sourceTree = "<group>"; };
+		05ACD39F214F3F9100DB271A /* book.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = book.xml; sourceTree = "<group>"; };
 		05ACD3A1214F447900DB271A /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 				05ACD390214F3C8C00DB271A /* Assets.xcassets */,
 				05ACD392214F3C8C00DB271A /* LaunchScreen.storyboard */,
 				05ACD395214F3C8C00DB271A /* Info.plist */,
-				05ACD39F214F3F9100DB271A /* Fruit.xml */,
+				05ACD39F214F3F9100DB271A /* book.xml */,
 				05ACD3A1214F447900DB271A /* FruitData.swift */,
 			);
 			path = "Fruit Parsing 03";
@@ -130,7 +130,7 @@
 			files = (
 				05ACD394214F3C8C00DB271A /* LaunchScreen.storyboard in Resources */,
 				05ACD391214F3C8C00DB271A /* Assets.xcassets in Resources */,
-				05ACD3A0214F3F9100DB271A /* Fruit.xml in Resources */,
+				05ACD3A0214F3F9100DB271A /* book.xml in Resources */,
 				05ACD38F214F3C8B00DB271A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
